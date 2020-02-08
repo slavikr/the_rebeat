@@ -1,0 +1,19 @@
+<header>
+  <div class="container">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-dark">
+      <a class="navbar-brand" href="#">{{ site.title | upcase }}</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <ul class="navbar-nav">
+          {% for item in site.data.menu %}
+          <li class="nav-item">
+            <a class="nav-link" href="#">{{ item.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>

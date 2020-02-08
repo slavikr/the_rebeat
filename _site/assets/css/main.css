@@ -1,3 +1,17 @@
-body { background: #fff; color: #000000; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+body { background-color: #333 !important; color: white !important; font-family: 'Montserrat', sans-serif !important; }
+
+body .container { padding: 0 !important; }
+
+header { width: 100%; height: 60px; border-bottom: 1px solid #7FFFD4; }
+
+header .bg-dark { background-color: #333 !important; }
+
+header nav { padding: 0 !important; }
+
+header nav .navbar-brand { color: white !important; font-weight: bold; font-size: 30px; font-family: "Open Sans"; }
+
+header nav .navbar-light, header nav .navbar-nav, header nav .nav-link { color: white !important; }
+
+header nav .navbar-light a, header nav .navbar-nav a, header nav .nav-link a { padding: 0 0 0 1.6rem !important; }
 
 /*# sourceMappingURL=main.css.map */
