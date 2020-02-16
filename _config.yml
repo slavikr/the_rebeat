@@ -1,13 +1,15 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "the_rebeat" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 description: >- # this means to ignore newlines until "baseurl:"
   A Personal blog and portfolio, where i'll share interests, hobbies, stories as well projects i've worked on.
 title: "The Rebeat" # the name of your site, e.g. ACME Corp.
+
 collections:
   events:
     output: false
   tracks:
-    output: false  
+    output: false
+    
 plugins:
   - jekyll-feed
   - jekyll-sitemap
