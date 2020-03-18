@@ -2,44 +2,11 @@ $bgColor: #333;
 $darkCyan: #008B8B;
 $lightCyan: #7FFFD4;
 
+@import 'navigation';
+@import 'normalize';
+
 body {
-  background-color: $bgColor !important;
-  color: white !important;
+	background-color: $bgColor !important;
   font-family: 'Montserrat', sans-serif !important;
-
-  .container {
-		padding: 0 !important;
-	}
-}
-
-header {
-	width: 100%;
-	height: 60px;
-	border-bottom: 1px solid $lightCyan;
-	
-	.bg-dark {
-		background-color: $bgColor !important;
-	}
-
-	nav {
-		padding: 0 !important;
-		
-		.navbar-brand {
-			color: white !important;
-			font-weight: bold;
-			font-size: 30px;
-			font-family: "Open Sans";
-		}
-
-		.navbar-light,
-		.navbar-nav,
-		.nav-link  {
-			color: white !important;
-
-			a {
-				padding: 0 0 0 1.6rem !important;
-			}
-		}
-
-	}
+  color: white;
 }

@@ -1,0 +1,114 @@
+header {
+	border-bottom: 2px solid $lightCyan;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	
+	.toggle {
+		display: none;
+	}
+
+	.logo {
+		font-family: "Open Sans";
+		font-size: 1.75rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 0.76rem 0;
+		text-decoration: none;
+		color: white;
+	}
+	
+	.bars {
+	  background: white;
+	  display: inline-block;
+	  height: 2px;
+	  position: relative;
+	  transition: background .2s ease-out;
+	  width: 18px;
+
+	  &:before, &:after {
+			background: white;
+		  content: '';
+		  display: block;
+		  height: 100%;
+		  position: absolute;
+		  transition: all .2s ease-out;
+		  width: 100%;
+	  }
+		
+		&:before {
+			top: 5px;
+		}
+
+	  &:after { 
+	  	top: -5px;
+	  }
+	}
+
+	.menu {
+		list-style-type: none;
+		display: flex;
+		justify-content: flex-end;
+		padding: 0;
+		flex: 2;
+
+		.item {
+			a {
+				padding-left: 1.5rem;
+				font-size: 0.875rem;
+				font-weight: 300;
+				color: white;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+// /* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (max-width: 992px) {}
+
+// /* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (max-width: 768px) {}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 576px) {
+	nav {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 100%;
+		
+
+		.logo {
+			padding: 0.76rem 0 0.76rem 1.5rem;
+		}
+
+		.toggle {
+			display: flex;
+			margin-left: auto;
+			padding-right: 1.5rem;
+			cursor:pointer;
+		}
+
+		.menu {
+			flex-wrap: wrap;
+			justify-content: space-between;
+			flex-direction: column;
+			flex-basis: 100%;
+			flex-grow: 1;
+			display: none;
+
+			.item {
+				padding: 0.76rem 0;
+			}
+		}
+		.active {
+			display: block;
+		}
+	}
+}
