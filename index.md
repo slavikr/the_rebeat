@@ -1,7 +1,7 @@
 ---
 layout: default
-title: index
+title: ''
 published: false
 
 ---
-Test
+Index page
